@@ -1,0 +1,3 @@
+[submodule "tonnetzcad"]
+	path = tonnetzcad
+	url = git@github.com:melkisedeath/tonnetzcad.git
