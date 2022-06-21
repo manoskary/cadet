@@ -11,6 +11,13 @@ This repository contains the training and the models from the paper **Cadence De
 
 Pre-installation requirements:
 
+If you are using conda please create an environment:
+```shell
+conda create -n cadet python=3.8 pip
+conda activate cadet
+```
+Proceed by visiting the following websites and installing the appropriate version of the following packages.
+
 - Pytorch >=1.8.1 [link](https://pytorch.org/get-started/locally/);
 - DGL >= 0.7 [link](https://www.dgl.ai/pages/start.html).
 
@@ -25,7 +32,7 @@ pip install -r requirements.txt
 
 - To install other requirement using conda:
 ```shell
-conda env create -f environment.yml
+conda env update -f environment.yml
 ```
 
 

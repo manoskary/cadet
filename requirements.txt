@@ -1,6 +1,4 @@
-scipy==1.7.3
 pandas==1.2.4
-numpy==1.18.3
 tqdm==4.62.1
 scikit-learn==0.24.2
 wandb==0.12.0
