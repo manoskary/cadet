@@ -266,7 +266,9 @@ class CadHomoGraphDataset(DGLDataset):
 
 class cad_feature_wtc(CadHomoGraphDataset):
 	def __init__(self, add_inverse_edges=False, add_aug=False, select_piece=None, save_path=None):
-		url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-wtc/"
+		# url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-wtc/"
+		url = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "tonnetzcad",
+							"node_classification", "cad-feature-wtc")
 		super().__init__(
 				name='cad_feature_wtc', url=url,
 				add_inverse_edges=add_inverse_edges, add_aug=add_aug,
@@ -277,7 +279,9 @@ class cad_feature_wtc(CadHomoGraphDataset):
 
 class cad_feature_msq(CadHomoGraphDataset):
 	def __init__(self, add_inverse_edges=False, add_aug=False, select_piece=None, save_path=None):
-		url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-msq/"
+		# url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-msq/"
+		url = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "tonnetzcad",
+							"node_classification", "cad-feature-msq")
 		super().__init__(
 				name='cad_feature_msq', url=url,
 				add_inverse_edges=add_inverse_edges, add_aug=add_aug,
@@ -288,7 +292,9 @@ class cad_feature_msq(CadHomoGraphDataset):
 
 class cad_feature_hsq(CadHomoGraphDataset):
 	def __init__(self, add_inverse_edges=False, add_aug=False, select_piece=None, save_path=None):
-		url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-hsq/"
+		# url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-hsq/"
+		url = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "tonnetzcad",
+							"node_classification", "cad-feature-hsq")
 		super().__init__(
 				name='cad_feature_hsq', url=url,
 				add_inverse_edges=add_inverse_edges, add_aug=add_aug,
@@ -299,7 +305,9 @@ class cad_feature_hsq(CadHomoGraphDataset):
 
 class cad_feature_quartets(CadHomoGraphDataset):
 	def __init__(self, add_inverse_edges=False, add_aug=False, select_piece=None, save_path=None):
-		url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-quartets/"
+		# url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-quartets/"
+		url = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "tonnetzcad",
+							"node_classification", "cad-feature-quartets")
 		super().__init__(
 				name='cad_feature_quartets', url=url,
 				add_inverse_edges=add_inverse_edges, add_aug=add_aug,
@@ -310,7 +318,9 @@ class cad_feature_quartets(CadHomoGraphDataset):
 
 class cad_local_wtc(CadHomoGraphDataset):
 	def __init__(self, add_inverse_edges=False, add_aug=False, select_piece=None, save_path=None):
-		url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-wtc/"
+		# url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-wtc/"
+		url = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "tonnetzcad",
+							"node_classification", "cad-feature-wtc")
 		super().__init__(
 			name='cad_local_wtc', url=url,
 			add_inverse_edges=add_inverse_edges, add_aug=add_aug,
@@ -320,7 +330,9 @@ class cad_local_wtc(CadHomoGraphDataset):
 
 class cad_algo_wtc(CadHomoGraphDataset):
 	def __init__(self, add_inverse_edges=False, add_aug=False, select_piece=None, save_path=None):
-		url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-wtc/"
+		# url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-wtc/"
+		url = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "tonnetzcad",
+							"node_classification", "cad-feature-wtc")
 		super().__init__(
 			name='cad_algo_wtc', url=url,
 			add_inverse_edges=add_inverse_edges, add_aug=add_aug,
@@ -330,7 +342,9 @@ class cad_algo_wtc(CadHomoGraphDataset):
 
 class cad_algo_msq(CadHomoGraphDataset):
 	def __init__(self, add_inverse_edges=False, add_aug=False, select_piece=None, save_path=None):
-		url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-msq/"
+		# url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-msq/"
+		url = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "tonnetzcad",
+							"node_classification", "cad-feature-msq")
 		super().__init__(
 			name='cad_algo_msq', url=url,
 			add_inverse_edges=add_inverse_edges, add_aug=add_aug,
@@ -340,7 +354,9 @@ class cad_algo_msq(CadHomoGraphDataset):
 
 class cad_algo_hsq(CadHomoGraphDataset):
 	def __init__(self, add_inverse_edges=False, add_aug=False, select_piece=None, save_path=None):
-		url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-hsq/"
+		# url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-hsq/"
+		url = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "tonnetzcad",
+							"node_classification", "cad-feature-hsq")
 		super().__init__(
 			name='cad_algo_hsq', url=url,
 			add_inverse_edges=add_inverse_edges, add_aug=add_aug,
@@ -350,7 +366,9 @@ class cad_algo_hsq(CadHomoGraphDataset):
 
 class cad_algo_quartets(CadHomoGraphDataset):
 	def __init__(self, add_inverse_edges=False, add_aug=False, select_piece=None, save_path=None):
-		url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-quartets/"
+		# url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-quartets/"
+		url = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "tonnetzcad",
+							"node_classification", "cad-feature-quartets")
 		super().__init__(
 			name='cad_algo_quartets', url=url,
 			add_inverse_edges=add_inverse_edges, add_aug=add_aug,
@@ -360,7 +378,9 @@ class cad_algo_quartets(CadHomoGraphDataset):
 
 class cad_local_msq(CadHomoGraphDataset):
 	def __init__(self, add_inverse_edges=False, add_aug=False, select_piece=None, save_path=None):
-		url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-msq/"
+		# url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-msq/"
+		url = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "tonnetzcad",
+							"node_classification", "cad-feature-msq")
 		super().__init__(
 			name='cad_local_msq', url=url,
 			add_inverse_edges=add_inverse_edges, add_aug=add_aug,
@@ -371,7 +391,9 @@ class cad_local_msq(CadHomoGraphDataset):
 
 class cad_local_hsq(CadHomoGraphDataset):
 	def __init__(self, add_inverse_edges=False, add_aug=False, select_piece=None, save_path=None):
-		url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-hsq/"
+		# url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-hsq/"
+		url = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "tonnetzcad",
+							"node_classification", "cad-feature-hsq")
 		super().__init__(
 			name='cad_local_hsq', url=url,
 			add_inverse_edges=add_inverse_edges, add_aug=add_aug,
@@ -382,7 +404,9 @@ class cad_local_hsq(CadHomoGraphDataset):
 
 class cad_local_quartets(CadHomoGraphDataset):
 	def __init__(self, add_inverse_edges=False, add_aug=False, select_piece=None, save_path=None):
-		url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-quartets/"
+		# url = "https://raw.githubusercontent.com/melkisedeath/tonnetzcad/main/node_classification/cad-feature-quartets/"
+		url = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "tonnetzcad",
+							"node_classification", "cad-feature-quartets")
 		super().__init__(
 			name='cad_local_quartets', url=url,
 			add_inverse_edges=add_inverse_edges, add_aug=add_aug,
