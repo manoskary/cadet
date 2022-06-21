@@ -56,6 +56,10 @@ python train_lightning.py --dataset wtc --cad-type pac
 ```
 Using the above command you will train PAC detection on the Bach fugues of the 1st Welle tempered clavier book.
 
+If you wish not to log your run with WANBD on the cloud then run:
+```shell
+WANDB_MODE=offline python script.py --args
+```
 
 #### Load and train pre-trained model
 
@@ -147,7 +151,7 @@ The features are computed per note/rest in the score. Chord refers to the set of
 | int_vec3                                        | int    | third value of interval vector  computed for all notes on the onset of the current one.            |
 | int_vec4                                        | int    | fourth value of interval vector  computed for all notes on the onset of the current one.           |
 | int_vec5                                        | int    | fifth value of interval vector  computed for all notes on the onset of the current one.            |
-| int_vec6                                        | int      | sixth value of interval vector  computed for all notes on the onset of the current one.            |
+| int_vec6                                        | int    | sixth value of interval vector  computed for all notes on the onset of the current one.            |
 | M/m                                             | binary | is the interval vector equivalent to Major or Minor chord                                          |
 | sus4                                            | binary | is the interval vector equivalent to a sus4 chord                                                  |
 | M7                                              | binary | is the interval vector equivalent to a dominant 7 chord                                            |
@@ -196,13 +200,13 @@ The features are computed per note/rest in the score. Chord refers to the set of
 | rest_lowest                                     | binary | is there a rest on any middle voice                                                                |
 | rest_middle                                     | binary | is there a rest on the lowest voice                                                                |
 | voice_ends                                      | binary | is there a voice end after the particular onset                                                    |
-| v7                                              | binary | does the chord have a seventh                                                                            |
-| v7-3                                            | binary |                                                                                                    |
-| has_7                                           | binary |                                                                                                    |
-| has_9                                           | binary |                                                                                                    |
-| bass_voice                                      | binary |                                                                                                    |
-| bass_moves_chromatic                            | binary |                                                                                                    |
-| bass_moves_octave                               | binary |                                                                                                    |
-| bass_compatible_v-i                             | binary |                                                                                                    |
-| bass_compatible_i-v                             | binary |                                                                                                    |
-| bass_moves_2M                                   | binary |                                                                                                    |
+| v7                                              | binary | does the chord have a seventh                                                                      |
+| v7-3                                            | binary | does the chord have a seventh and a third                                                          |
+| has_7                                           | binary | does the chord have a seventh                                                                      |
+| has_9                                           | binary | does the chord have a ninth                                                                        |
+| bass_voice                                      | binary | is the bass on this voice/note                                                                     |
+| bass_moves_chromatic                            | binary | does the bass (lowest pitch) move chromatically                                                    |
+| bass_moves_octave                               | binary | does the bass (lowest pitch) move with an octave jump                                              |
+| bass_compatible_v-i                             | binary | does the bass (lowest pitch) move with a V to I                                                    |
+| bass_compatible_i-v                             | binary | does the bass (lowest pitch) move with a I to V                                                    |
+| bass_moves_2M                                   | binary | does the bass (lowest pitch) does the mass move with a second major interval.                      |
