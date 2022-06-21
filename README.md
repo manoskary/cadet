@@ -35,6 +35,11 @@ pip install -r requirements.txt
 conda env update -f environment.yml
 ```
 
+You might also need to install the repo as a package if you are running from the terminal.
+It's suggested to use the experimental pip install to keep up with new versions or edits you might want to make:
+```shell
+pip install . -e
+```
 
 
 ## Getting Started
@@ -47,7 +52,7 @@ You can find the project results and download the models at [https://wandb.ai/me
 
 ```shell
 cd cadet/train
-python train_lightning --dataset wtc --cad-type PAC 
+python train_lightning.py --dataset wtc --cad-type pac 
 ```
 Using the above command you will train PAC detection on the Bach fugues of the 1st Welle tempered clavier book.
 
@@ -56,7 +61,7 @@ Using the above command you will train PAC detection on the Bach fugues of the 1
 
 ```shell
 cd cadet/train
-python train_lightning --dataset wtc --cad-type PAC --wandb_id --load_from_checkpoints 
+python train_lightning --dataset wtc --cad-type pac --wandb_id --load_from_checkpoints 
 ```
 Using the above command you will load a pretrained model for PAC detection, pretrained on String Quartets and fine tune it on the Bach fugues of the 1st Well tempered clavier book.
 
@@ -66,7 +71,7 @@ Load pretrained model from Bach Fugues PAC prediction and skip training only to 
 
 ```shell
 cd cadet/train
-python train_lightning --dataset wtc --cad-type PAC --wandb_id  --skip-training --load_from_checkpoints 
+python train_lightning --dataset wtc --cad-type pac --wandb_id  --skip-training --load_from_checkpoints 
 ```
 
 

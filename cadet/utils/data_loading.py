@@ -1,6 +1,5 @@
 import os, sys
-import yaml, urllib
-import urllib.request
+import yaml
 import pandas as pd
 import numpy as np
 import platform

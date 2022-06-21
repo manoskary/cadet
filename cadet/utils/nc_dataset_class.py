@@ -7,10 +7,9 @@ import dgl
 from dgl.data import DGLDataset
 from dgl import save_graphs, load_graphs
 from dgl.data.utils import save_info, load_info
-import networkx as nx
-import matplotlib.pyplot as plt
-from musym.utils.metadata import *
-from musym.utils.pos_enc import positional_encoding
+
+from cadet.utils.metadata import *
+from cadet.utils.pos_enc import positional_encoding
 
 
 def min_max_scaler(X):
@@ -263,20 +262,6 @@ class CadHomoGraphDataset(DGLDataset):
 		print("NumTrainingSamples: ", torch.count_nonzero(self.graph.ndata["train_mask"]).item())
 		print("NumValidationSamples: ", torch.count_nonzero(self.graph.ndata["val_mask"]).item())
 		print("NumTestSamples: ", torch.count_nonzero(self.graph.ndata["test_mask"]).item())
-
-	def visualize_graph(self, save_dir, name=None):
-		G = dgl.node_subgraph(self.graph, list(range(10, 50)))
-		nx_G = G.to_networkx().to_undirected()
-		# Kamada-Kawaii layout usually looks pretty for arbitrary graphs
-		pos = nx.kamada_kawai_layout(nx_G)
-		nx.draw(nx_G, pos, with_labels=True, node_color=[[.7, .7, .7]])
-		plt.show(block=False)
-		if not os.path.exists(save_dir):
-			os.path.makedirs(save_dir)
-		if name:
-			plt.savefig(os.path.join(save_dir, name+".png"), format="PNG")
-		else:
-			plt.savefig(os.path.join(save_dir, "graph.png"), format="PNG")
 
 
 class cad_feature_wtc(CadHomoGraphDataset):

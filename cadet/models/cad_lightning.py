@@ -2,7 +2,8 @@ import dgl
 import torch
 import torch.nn.functional as F
 from cadet.models import GraphSMOTE
-from torchmetrics import Accuracy, AUROC, F1
+from torchmetrics import Accuracy, AUROC
+from torchmetrics import F1Score as F1
 from pytorch_lightning import LightningDataModule, LightningModule
 
 

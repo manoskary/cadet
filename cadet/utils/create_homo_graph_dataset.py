@@ -4,10 +4,9 @@ import numpy.lib.recfunctions as rfn
 import os
 import pandas as pd
 from itertools import combinations
-# modified perso imports
 import partitura
 # Local Imports
-from data_loading import data_loading
+from cadet.utils.data_loading import data_loading
 
 CHORDS = {
     "M/m": [0, 0, 1, 1, 1, 0],
