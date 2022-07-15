@@ -1,6 +1,13 @@
 name: cadet
+channels:
+  - default
+  - conda-forge
+  - pytorch
+  - dglteam
 dependencies:
-  - python
+  - python=3.8
+  - pytorch=1.8.1
+  - dgl=0.7
   - pip
   - pip:
     - pandas==1.2.4
@@ -8,4 +15,5 @@ dependencies:
     - scikit-learn==0.24.2
     - wandb==0.12.0
     - pytorch-lightning==1.6.0
+    - torchmetrics
     - partitura

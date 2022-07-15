@@ -3,15 +3,28 @@ Cadence Detection in Symbolic Classical Music using Graph Neural Networks.
 
 ## Introduction
 
-This repository contains the training and the models from the paper **Cadence Detection in Symbolic Classical Music using Graph Neural Networks** submitted at ISMIR 2022. 
+This repository contains the training and the models from the paper **Cadence Detection in Symbolic Classical Music using Graph Neural Networks** submitted at ISMIR 2022.
+[pdf]()
 
 
+## Requirements and Installation
 
-## Requirements
+#### Installation
 
-Pre-installation requirements:
+If you are using conda please install the environment:
 
-If you are using conda please create an environment:
+```shell
+conda env create -f environment.yml
+conda activate cadet
+cd path/to/cadet
+pip install .
+```
+
+ 
+If this fails, follow the steps bellow.
+
+#### Pre-installation requirements:
+
 ```shell
 conda create -n cadet python=3.8 pip
 conda activate cadet
