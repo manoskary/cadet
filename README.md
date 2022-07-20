@@ -1,11 +1,10 @@
-# cadet
-Cadence Detection in Symbolic Classical Music using Graph Neural Networks.
+# Cadet
+Cadence Detection in Symbolic Classical Music using Graph Neural Networks (ISMIR2022).
 
 ## Introduction
 
 This repository contains the training and the models from the paper **Cadence Detection in Symbolic Classical Music using Graph Neural Networks** submitted at ISMIR 2022.
 [pdf]()
-
 
 ## Requirements and Installation
 
