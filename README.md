@@ -4,7 +4,7 @@ Cadence Detection in Symbolic Classical Music using Graph Neural Networks (ISMIR
 ## Introduction
 
 This repository contains the training and the models from the paper **Cadence Detection in Symbolic Classical Music using Graph Neural Networks** submitted at ISMIR 2022.
-[pdf]()
+[pdf](https://arxiv.org/pdf/2208.14819.pdf)
 
 ## Requirements and Installation
 
