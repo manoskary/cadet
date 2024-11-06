@@ -1,3 +1,9 @@
+[![Python](https://img.shields.io/badge/-Python_3.8+-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![Pytorch](https://img.shields.io/badge/PyTorch_1.8+-ee4c2c?logo=pytorch&logoColor=white)](https://pytorch.org/get-started/locally/)
+[![Paper](http://img.shields.io/badge/paper-arxiv.2208.14819-B31B1B.svg)](https://arxiv.org/abs/2208.14819)
+[![Conference](http://img.shields.io/badge/ISMIR-2022-4b44ce.svg)](https://ismir2022.ismir.net/program/papers)
+
+
 # Cadet
 Cadence Detection in Symbolic Classical Music using Graph Neural Networks (ISMIR2022).
 
